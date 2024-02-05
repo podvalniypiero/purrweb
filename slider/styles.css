@@ -1,4 +1,4 @@
-html{
+*{
     background-color: #181818;
 }
 
@@ -36,7 +36,7 @@ button {
 .right {
     right:5px;
 }
-.dotsParent {
+.dotsContainer {
     position: absolute;
     bottom: -18px;
     left: 1;

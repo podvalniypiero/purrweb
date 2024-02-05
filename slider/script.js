@@ -1,7 +1,7 @@
 const img = ['1.jpg', '2.jpg', '3.jpg', '4.jpeg', '5.jpg', '6.jpeg', '7.jpg', '8.jpg', '9.png', '10.jpg']
 let frame = 0;
 
-const dotsParent = document.querySelector(".dotsParent")
+const dotsParent = document.querySelector(".dotsContainer")
 const imgStyle = document.querySelectorAll(".img")
 const btnL = document.getElementById("btnL")
 const btnR = document.getElementById("btnR")
@@ -41,14 +41,11 @@ function setDot(number) {
     }
 }
 
-let pos;
-let animation;
-
 
 function toLeft() {
-    pos = -150;
+    let pos = -150;
     imgStyle[0].style.left = pos + 'px';
-    btnL.disabled = true // когда кликнули, кликнуть еще раз сразу же нельяз
+    btnL.disabled = true // когда кликнули, кликнуть еще раз сразу же нельзя
     btnR.disabled = true
 
     const changePosition = () => {
@@ -61,11 +58,11 @@ function toLeft() {
             imgStyle[0].style.left = pos + 'px';
         }
     }
-    animation = setInterval(changePosition, 5) // анимация через setInterval
+    let animation = setInterval(changePosition, 5) // анимация через setInterval
 }
 
 function toRight() {
-    pos = -150;
+    let pos = -150;
     imgStyle[0].style.right = pos + 'px';
     btnL.disabled = true
     btnR.disabled = true
@@ -79,7 +76,7 @@ function toRight() {
             imgStyle[0].style.right = pos + 'px';
         }
     }
-    animation = setInterval(changePosition, 5)
+    let animation = setInterval(changePosition, 5)
 }
 
 
