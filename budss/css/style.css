@@ -200,7 +200,7 @@ ul {
     max-width: 397px;
     margin-right: 131px;
     position: revert;
-    
+    z-index: 2;
 }
 
 .second__content__nav--item {
@@ -565,7 +565,7 @@ ul {
 
 .company {
     background-color: white;
-    padding: 0 60px 100px 60px;
+    padding: 15px 60px 100px 60px;
 }
 
 .company__logos {
@@ -573,6 +573,7 @@ ul {
     gap: 90px;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -832,6 +833,7 @@ label {
 .footer__menu {
     display: flex;
     gap: 40px;
+    margin-bottom: 15px;
 }
 
 .app_content {
